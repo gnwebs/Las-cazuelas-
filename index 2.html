@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Restaurante Las Cazuelas · Guerrero Negro, B.C.S.</title>
+<meta name="description" content="Cocina mexicana casera y mariscos frescos en Guerrero Negro. Abierto todos los días de 7:00 a 22:00. Llama al 615 157 1213.">
+<link rel="icon" type="image/jpeg" href="logo.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --noche:#272729; --barro:#743526; --teja:#B5402A; --sol:#E0C455; --nopal:#3F8A3A; --mar:#4A6366; --papel:#FFFCF5; --arena:#F3EBDD; --tinta:#2B1D1A;
+  --display:"Alfa Slab One","Rockwell","Georgia",serif;
+  --texto:"Raleway","Segoe UI",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--texto);color:var(--tinta);background:var(--papel);line-height:1.6;font-size:1.0625rem;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sol);outline-offset:3px}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.25rem}
+
+.hero{background:linear-gradient(180deg,var(--noche) 0%,var(--barro) 100%);color:#fff;text-align:center;padding:2.5rem 0 3.25rem}
+.hero img{width:min(30rem,100%);height:auto;display:block;margin:0 auto 1.5rem;border-radius:1rem}
+.hero p{margin:0 auto 1.75rem;max-width:32rem;color:#F5E4D6;font-size:1.15rem}
+.botones{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center}
+.btn{display:inline-block;padding:.85rem 1.5rem;border-radius:999px;font-weight:800;text-decoration:none;border:2px solid var(--sol)}
+.btn.llamar{background:var(--sol);color:var(--noche)}
+.btn.mapa{background:transparent;color:#fff}
+.btn:hover{filter:brightness(1.1)}
+
+section{padding:3rem 0}
+h2{font-family:var(--display);font-weight:400;font-size:clamp(1.6rem,5vw,2.2rem);line-height:1.15;margin:0 0 1.25rem;color:var(--barro)}
+.datos{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr))}
+.dato h3{margin:0 0 .25rem;font-size:1rem;font-weight:800;color:var(--nopal)}
+.dato p{margin:0}
+.grande{font-size:1.3rem;font-weight:800}
+
+.menu{background:var(--arena)}
+.grupos{display:grid;gap:2rem 2.5rem;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr))}
+.grupos h3{font-family:var(--display);font-weight:400;font-size:1.25rem;color:var(--teja);margin:0 0 .4rem;padding-bottom:.4rem;border-bottom:3px solid var(--sol)}
+.grupos p{margin:0}
+
+.resena{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.nota{font-family:var(--display);font-size:3rem;color:var(--teja);line-height:1}
+
+footer{background:var(--noche);color:#E8D9CC;text-align:center;padding:1.75rem 0;font-size:.95rem}
+footer a{color:var(--sol)}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <img src="logo.jpeg" alt="Logo de Restaurante Las Cazuelas" width="2360" height="1576">
+    <p>Cocina mexicana casera y mariscos frescos de la región. Abierto todos los días de 7:00 a 22:00.</p>
+    <div class="botones">
+      <a class="btn llamar" href="tel:+526151571213">Llamar al 615 157 1213</a>
+      <a class="btn mapa" href="https://www.google.com/maps/search/?api=1&query=Restaurante+Las+Cazuelas+Guerrero+Negro" target="_blank" rel="noopener">Cómo llegar</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="visitanos">
+    <div class="wrap">
+      <h2>Visítanos</h2>
+      <div class="datos">
+        <div class="dato">
+          <h3>Horario</h3>
+          <p class="grande">Lunes a domingo</p>
+          <p>7:00 a. m. a 10:00 p. m. Para desayunar temprano o cenar.</p>
+        </div>
+        <div class="dato">
+          <h3>Teléfono</h3>
+          <p class="grande"><a href="tel:+526151571213">615 157 1213</a></p>
+        </div>
+        <div class="dato">
+          <h3>Dirección</h3>
+          <p>Carretera a Guerrero Negro (Emiliano Zapata), zona Fundo Legal<br>23940 Guerrero Negro, B.C.S.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <div class="wrap">
+      <h2>Menú</h2>
+      <div class="grupos">
+        <div>
+          <h3>Desayunos</h3>
+          <p>Huevos al gusto, chilaquiles (solos, con pollo, huevo o machaca), omelettes variados y hot cakes.</p>
+        </div>
+        <div>
+          <h3>Mariscos</h3>
+          <p>Pescado, camarón y pulpo (empanizados, al ajo, a la diabla), cócteles, ceviches y caldos, como el de 7 mares.</p>
+        </div>
+        <div>
+          <h3>Carnes y aves</h3>
+          <p>Fajitas Cazuelas (gratinadas con champiñones), milanesas, carne asada y pollo en distintas salsas: a la naranja o crema de champiñones.</p>
+        </div>
+        <div>
+          <h3>Antojitos mexicanos</h3>
+          <p>Tacos, quesatacos, burritos (de asada, pollo, machaca o pescado), enchiladas y chiles rellenos.</p>
+        </div>
+        <div>
+          <h3>Bebidas</h3>
+          <p>Cafés, licuados, limonadas, refrescos, cervezas, margaritas y vino.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="opiniones">
+    <div class="wrap">
+      <h2>Lo que dicen de nosotros</h2>
+      <div class="resena">
+        <div class="nota">4.1</div>
+        <p>Calificación en Google Maps, con más de 570 opiniones de clientes.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    Restaurante Las Cazuelas · Guerrero Negro, B.C.S. ·
+    <a href="tel:+526151571213">615 157 1213</a>
+  </div>
+</footer>
+
+</body>
+</html>
